@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Club | Join</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+<nav>
+        <div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="CIS CLUB Logo" class="nav-logo">
+    </a>
+</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="Members-Join.html" class="active">Members/Join</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="hero small-hero members-hero">
+        <h1>Become a Member</h1>
+        <p>Join the CIS Club to grow your skills, meet new people, and take part in exciting activities.</p>
+    </section>
+
+    <!-- Membership Benefits -->
+<section class="benefits">
+    <h2>Membership Benefits</h2>
+    <div class="benefit-list">
+        <div class="benefit-card">
+            <div class="icon-circle">📚</div>
+            <h3>Learning Sessions</h3>
+            <p>Access workshops, tutorials, and exclusive skill-building events.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">🤝</div>
+            <h3>Networking</h3>
+            <p>Connect with seniors, professionals, and like-minded students.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">💼</div>
+            <h3>Career Support</h3>
+            <p>Resume help, portfolio building, and job/internship guidance.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">🎉</div>
+            <h3>Club Activities</h3>
+            <p>Participate in competitions, tours, hackathons, and fun events.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Join Form -->
+    <section class="join-form">
+        <h2>Join the Club</h2>
+        <form id="joinForm">
+            <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Student ID *</label>
+                <input type="text" id="studentId" required>
+            </div>
+
+            <div class="form-group">
+                <label>Department *</label>
+                <select id="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CIS">CIS</option>
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="BBA">BBA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Why do you want to join?</label>
+                <textarea id="reason" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="cta-btn">Submit</button>
+
+            <p id="successMsg" class="success"></p>
+        </form>
+    </section>
+
+</body>
+</html>
